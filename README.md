@@ -4,7 +4,7 @@ UniChatJS provides a complete, configurable, and easy-to-use unichat-to-unichat 
 
 ## Live Example
 
-Here's an example application that uses both media and data connections: https://glitch.com/~unichatjs-video. The example also uses its own [PeerServer](https://github.com/nzldev/unichatjs-server).
+Here's an example application that uses both media and data connections: https://glitch.com/~unichatjs-video. The example also uses its own [UnichatServer](https://github.com/nzldev/unichatjs-server).
 
 ## Setup
 
