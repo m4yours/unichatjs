@@ -24,6 +24,19 @@ Here's an example application that uses both media and data connections: https:/
 
 **Create a Unichat**  
 ```javascript
+var name = prompt('What's your name?');
+
+var peer = new Peer(name, { 
+  host: 'localhost',
+  port: 9000,
+  secure: true
+});
+
+// peer.on('open', function(name){
+//   alert(name + ' connected');
+// });
+
+or
 const unichat = new Unichat('pick-an-id'); 
 // You can pick your own id or omit the id if you want to get a random one from the server.
 ```
