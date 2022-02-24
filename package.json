@@ -1,0 +1,64 @@
+{
+  "name": "unichatjs",
+  "version": "1.0.0",
+  "description": "UniChatJS client",
+  "main": "./dist/unichatjs.min.js",
+  "homepage": "https://github.com/nzldev/unichatjs#readme",
+  "keywords": [
+    "unichatjs",
+    "webrtc",
+    "p2p",
+    "rtc"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nzldev/unichatjs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nzldev/unichatjs/issues"
+  },
+  "files": [
+    "dist/*.js",
+    "dist/*.map",
+    "lib/",
+    "index.d.ts"
+  ],
+  "author": "Nazrul Islam Nadeem",
+  "maintainers": [
+    "Nazrul Islam <nazrul.devs@gmail.com> (https://github.com/nzldev)"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "parcel build lib/exports.ts --out-file unichatjs.min.js",
+    "build-nonminified": "parcel build lib/exports.ts --out-file unichatjs.js --no-minify",
+    "prepublishOnly": "npm run build",
+    "test": "mocha -r ts-node/register -r jsdom-global/register test/**/*.ts"
+  },
+  "release": {
+    "branch": "master"
+  },
+  "types": "./index.d.ts",
+  "devDependencies": {
+    "@types/chai": "^4.3.0",
+    "@types/mocha": "^9.1.0",
+    "chai": "^4.3.6",
+    "jsdom": "^19.0.0",
+    "jsdom-global": "^3.0.2",
+    "mocha": "^9.2.0",
+    "mock-socket": "8.0.5",
+    "parcel-bundler": "^1.12.4",
+    "standard": "^16.0.4",
+    "ts-node": "^10.5.0",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "@types/node": "^17.0.18",
+    "eventemitter3": "^3.1.2",
+    "peerjs-js-binarypack": "1.0.1",
+    "webrtc-adapter": "^7.7.1"
+  },
+  "collective": {
+    "type": "opencollective",
+    "url": "https://opencollective.com/unichat"
+  }
+}
