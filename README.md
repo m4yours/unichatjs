@@ -1,10 +1,5 @@
 # UniChatJS: Simple unichat-to-unichat with WebRTC #
 
-### https://t.me/joinchat/VWI0UBxnG7f7_DV7
-
-[![Backers on Open Collective](https://opencollective.com/unichat/backers/badge.svg)](#backers)
- [![Sponsors on Open Collective](https://opencollective.com/unichat/sponsors/badge.svg)](#sponsors) 
-
 UniChatJS provides a complete, configurable, and easy-to-use unichat-to-unichat API built on top of WebRTC, supporting both data channels and media streams.
 
 ## Live Example
