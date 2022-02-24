@@ -32,6 +32,15 @@ var peer = new Peer(name, {
   secure: true
 });
 
+// or
+
+// var peer = new Peer({
+//   config: {'iceServers': [
+//     { url: 'stun:stun.l.google.com:19302' },
+//     { url: 'turn:homeo@turn.bistri.com:80', credential: 'homeo' }
+//   ]} /* Sample servers, please use appropriate ones */
+// });
+
 // peer.on('open', function(name){
 //   alert(name + ' connected');
 // });
