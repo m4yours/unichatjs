@@ -26,7 +26,7 @@ Here's an example application that uses both media and data connections: https:/
 ```javascript
 var name = prompt('What's your name?');
 
-var peer = new Peer(name, { 
+var unichat = new Unichat(name, { 
   host: 'localhost',
   port: 9000,
   secure: true
@@ -34,15 +34,32 @@ var peer = new Peer(name, {
 
 // or
 
-// var peer = new Peer({
+// var unichat = new Unichat({
 //   config: {'iceServers': [
 //     { url: 'stun:stun.l.google.com:19302' },
 //     { url: 'turn:homeo@turn.bistri.com:80', credential: 'homeo' }
 //   ]} /* Sample servers, please use appropriate ones */
 // });
 
-// peer.on('open', function(name){
+// unichat.on('open', function(name){
 //   alert(name + ' connected');
+// });
+
+// const unichatServer = new Unichatjs(undefined, {
+//   host: UNICHAT_SERVER_HOST,
+//   path: UNICHAT_SERVER_PATH,
+//   secure: false,
+//   port: UNICHAT_SERVER_PORT,
+//   config: {
+//     iceServers: [
+//       {
+//         urls: [
+//           'stun:stun1.l.google.com:19302',
+//           'stun:stun2.l.google.com:19302',
+//         ],
+//       },
+//     ],
+//   },
 // });
 
 or
